@@ -1,0 +1,23 @@
+/* Today I faced many difficulties in JavaScript, I searched, I failed, I practiced, I applied, But Failed.. But I learnt alot of things. I intended to make ToDo-List project today but couldn't finish it, as I was in lot's of confusion.. Encountered with many difficulties, solved some.. some are still unsolved.. JS is tough if you do
+
+
+The main difference between let and var is that scope of a variable defined with let is limited to the block in which it is declared while variable declared with var has the global scope. So we can say that var is rather a keyword which defines a variable globally regardless of block scope.. (So, use let if we gonna use variable only one time).
+
+addEventListener('submit') --> IMP
+todo-Form.addEventListener('submit',function(e){
+	e.preventDefault();
+}) --> To stop reloading while submitting.
+
+e -> will be argument and e.preventDefault
+
+The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. For example, this can be useful when: Clicking on a "Submit" button, prevent it from submitting a form.
+
+
+.trim() is used to remove white spaces from string..
+so, here by-default.. name.trim() will be empty string if it only contains blank spaces.
+
+document.querySelector("(Form Class)").reset(); //Will reset the input.
+
+date.now() -> number of miliseconds from 1970.. to give it unique id. // used to retrive that index.
+
+div.ok --> tab --> <div class="ok"></div>

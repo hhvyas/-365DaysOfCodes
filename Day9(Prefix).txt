@@ -1,0 +1,66 @@
+
+Link: https://www.geeksforgeeks.org/prefix-sum-2d-array/
+int main(){
+     for (ll i=0;i<4;i++){
+         for (ll j=0;j<4;j++){
+             ll x;
+             cin>>x;
+             a[i][j] = x;
+         }
+     }
+     pre[0][0] = a[0][0];
+     for (ll i=1;i<4;i++){
+         pre[i][0] = a[i][0] + pre[i-1][0];
+     }
+     for (ll i=1;i<4;i++){
+         pre[0][i] = a[0][i] + pre[0][i-1];
+     }
+     for (ll i=1;i<4;i++){
+         for (ll j=1;j<4;j++){
+             pre[i][j] = a[i][j] + pre[i-1][j] + pre[i][j-1] - pre[i-1][j-1];
+         }
+     }
+     for (ll i=0;i<4;i++){
+         for (ll j=0;j<4;j++){
+             cout<<pre[i][j]<<" ";
+         }
+         cout<<endl;
+     }
+     return 0;
+ }
+
+--------------------------
+/* For - Sum queries ..  
+ int main(){
+     ll n,m;
+     cin>>n>>m;
+     for (ll i=0;i<n;i++){
+         for (ll j=0;j<m;j++){
+             ll x;
+             cin>>x;
+             a[i][j] = x;
+         }
+     }
+     pre[0][0] = a[0][0];
+     for (ll i=1;i<n;i++){
+         pre[i][0] = a[i][0] + pre[i-1][0];
+     }
+     for (ll i=1;i<m;i++){
+         pre[0][i] = a[0][i] + pre[0][i-1];
+     }
+     for (ll i=1;i<n;i++){
+         for (ll j=1;j<m;j++){
+             pre[i][j] = a[i][j] + pre[i-1][j] + pre[i][j-1] - pre[i-1][j-1];
+         }
+     }
+    
+    ll t1i,t1j,t2i,t2j;
+    cin >> t1i >> t1j >> t2i >> t2j;
+    cout<<pre[t2i][t2j] - pre[t1i-1][t2j] - pre[t2i][t1j-1] + pre[t1i-1][t1j-1]; 
+
+
+
+     return 0;
+ }
+ 
+         

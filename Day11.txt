@@ -1,0 +1,17 @@
+/* Today I solved 5 Codeforces problems, some of them were tough, but overall interesting problems */
+
+
+https://codeforces.com/problemset/problem/893/C
+https://ideone.com/0Yqssl
+
+https://codeforces.com/contest/862/problem/B
+https://ideone.com/LfPMi3
+
+https://codeforces.com/problemset/problem/755/C
+https://ideone.com/DdXRPT
+
+https://codeforces.com/contest/57/problem/A
+https://ideone.com/hbjXB3
+
+https://codeforces.com/problemset/problem/932/B
+https://ideone.com/GLVWRB

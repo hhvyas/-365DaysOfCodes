@@ -1,0 +1,18 @@
+Today I started JavaScript Again from scratch from www.javascript.info and learnt some articles.. and came to know some stuff.
+- As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
+The benefit of a separate file is that the browser will download it and store it in its cache.
+Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once.
+That reduces traffic and makes pages faster.
+
+-If src is set, the script content is ignored.
+<script src="file.js">
+  alert(1); // the content is ignored, because src is set
+</script>
+
+- The directive looks like a string: "use strict" or 'use strict'. When it is located at the top of a script, the whole script works the “modern” way.
+
+- `How are you ${1+2}` Backticks..
+
+
+ And solved One problem in codefocres but got stuck so bad in second one and lost 2 hours for it.. It was a mistake it was only implementation problem and I didn't do it.
+ */

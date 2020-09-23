@@ -1,4 +1,4 @@
-/*Today I encountered with Partial Sum and did a problems regarding it, and solved further problems on codeforces and learnt new things in JavaScript Too. */
+/*Today I encountered with Partial Sum and did a problems regarding it, and solved further problems on codeforces and learnt new things in JavaScript Too. 
 https://codeforces.com/blog/entry/15729
 Partial sum
 
@@ -44,3 +44,4 @@ result = a ?? b
 ------------------------------------------------
 https://codeforces.com/problemset/problem/1225/B2
 https://ideone.com/0ijBVV
+*/

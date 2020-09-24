@@ -1,0 +1,55 @@
+/* Today I learnt about function and arrow function with detailed information about basics of function expressions and function declarations and solved 3 problems in codeforces. */
+
+function showMessage(from, text = anotherFunction()) {
+  // anotherFunction() only executed if no text given
+  // its result becomes the value of text
+}
+// if there's no "count" parameter, show "unknown"
+function showCount(count) {
+  alert(count ?? "unknown");
+} 
+
+
+
+function sayHi() {
+  // ...
+}
+
+let sayHi = function() {
+  // ...
+};
+
+    There’s no need for ; at the end of code blocks and syntax structures that use them like if { ... }, for { }, function f { } etc.
+    A Function Expression is used inside the statement: let sayHi = ...;, as a value. It’s not a code block, but rather an assignment. The semicolon ; is recommended at the end of statements, no matter what the value is. So the semicolon here is not related to the Function Expression itself, it just terminates the statement.
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
+
+https://javascript.info/function-expressions
+As a rule of thumb, when we need to declare a function, the first to consider is Function Declaration syntax. It gives more freedom in how to organize our code, because we can call such functions before they are declared.
+
+That’s also better for readability, as it’s easier to look up function f(…) {…} in the code than let f = function(…) {…};. Function Declarations are more “eye-catching”.
+
+…But if a Function Declaration does not suit us for some reason, or we need a conditional declaration (we’ve just seen an example), then Function Expression should be used.
+
+Arrow functions are handy for one-liners. They come in two flavors:
+
+    Without curly braces: (...args) => expression – the right side is an expression: the function evaluates it and returns the result.
+    With curly braces: (...args) => { body } – brackets allow us to write multiple statements inside the function, but we need an explicit return to return something.
+
+https://codeforces.com/contest/1420/problem/A
+https://ideone.com/iXfb5J
+
+https://codeforces.com/contest/1420/problem/B
+https://ideone.com/LY2tgX
+
+https://codeforces.com/contest/1420/problem/C1
+https://ideone.com/XIoVTD
